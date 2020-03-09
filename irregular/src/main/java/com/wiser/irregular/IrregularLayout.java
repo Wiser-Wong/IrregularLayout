@@ -66,6 +66,8 @@ public class IrregularLayout<T> extends ViewGroup {
 		TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.IrregularLayout);
 		choiceLayoutId = ta.getResourceId(R.styleable.IrregularLayout_il_layoutId, -1);
 		isFillSurplusWidth = ta.getBoolean(R.styleable.IrregularLayout_il_isFillSurplusWidth, isFillSurplusWidth);
+		mHorizontalSpacing = (int) ta.getDimension(R.styleable.IrregularLayout_il_horizontalSpacing,mHorizontalSpacing);
+		mVerticalSpacing = (int) ta.getDimension(R.styleable.IrregularLayout_il_verticalSpacing,mVerticalSpacing);
 		ta.recycle();
 	}
 
