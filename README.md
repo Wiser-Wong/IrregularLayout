@@ -12,7 +12,7 @@
           }
 
         dependencies {
-              implementation 'com.github.Wiser-Wong:IrregularLayout:1.0.0'
+              implementation 'com.github.Wiser-Wong:IrregularLayout:1.0.1'
       }
 ## 使用控件
 
