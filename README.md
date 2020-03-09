@@ -1,7 +1,7 @@
 # IrregularLayout
 不规则布局列表
 ## 截图
-![images](https://github.com/Wiser-Wong/TextViewEllipsis/blob/master/images/ellipsis.png)
+![images](https://github.com/Wiser-Wong/IrregularLayout/blob/master/images/irregular.jpg)
 
 ## 环境配置
     allprojects {
@@ -12,7 +12,7 @@
           }
 
         dependencies {
-              implementation 'com.github.Wiser-Wong:TextViewEllipsis:1.2.0'
+              implementation 'com.github.Wiser-Wong:IrregularLayout:1.0.0'
       }
 ## 使用控件
 
