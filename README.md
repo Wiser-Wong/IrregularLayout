@@ -16,36 +16,30 @@
       }
 ## 使用控件
 
-    <com.wiser.irregular.IrregularLayout
+     <com.wiser.irregular.IrregularLayout
         android:id="@+id/ill_layout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_margin="20dp"
         app:il_isFillSurplusWidth="false"
         app:il_layoutId="@layout/irregular_item"
+        app:il_horizontalSpacing="3dp"
+        app:il_verticalSpacing="3dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/iv_cover"
         app:layout_constraintRight_toRightOf="parent"/>
+
    
     irregular_item.xml
     <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_align_text"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-      <TextView
-          android:id="@+id/tv_align_text"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:background="@color/colorAccent"
-          android:layout_margin="6dp"
-          android:padding="10dp"
-          android:textSize="12sp"
-          android:text="ddddddd"/>
-
-    </LinearLayout>
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:text="ddddddd"/>
     
     MainActivity.class
     irregularLayout.setOnIrregularAdapter(new OnIrregularAdapter<String>() {
@@ -75,3 +69,5 @@
 ### IrregularLayout 不规则排版布局
 * il_layoutId:item布局id
 * il_isFillSurplusWidth:是否填充剩余宽度，并且是平分方式填充
+* il_horizontalSpacing:横向距离
+* il_verticalSpacing:纵向距离
